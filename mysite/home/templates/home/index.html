@@ -53,16 +53,20 @@
 
             <form method = "POST">
                 {% csrf_token %}
+                <div>
 
-                {% if log_sign == "logout" %}
-                <button type="submit" class="login" value="Logout" name="_logout" class="btn btn-primary">
-                로그아웃
-                </button>
-                {% else %}
-                <button type="submit" class="login" value="Login" name="_login" class="btn btn-primary">
-                로그인
-                </button>
-                {% endif %}
+                </div>
+                <div>
+                    {% if log_sign == "logout" %}
+                    <button type="submit" class="login" value="Logout" name="_logout" class="btn btn-primary">
+                    로그아웃
+                    </button>
+                    {% else %}
+                    <button type="submit" class="login" value="Login" name="_login" class="btn btn-primary">
+                    로그인
+                    </button>
+                    {% endif %}
+                </div>
             </form>
     </nav>
 
