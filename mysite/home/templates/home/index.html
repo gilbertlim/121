@@ -50,7 +50,20 @@
                     </div>
                 </form>
             </div>
-        <a class="login" href=""><div>Login</div></a>
+
+            <form method = "POST">
+                {% csrf_token %}
+
+                {% if log_sign == "logout" %}
+                <button type="submit" class="login" value="Logout" name="_logout" class="btn btn-primary">
+                로그아웃
+                </button>
+                {% else %}
+                <button type="submit" class="login" value="Login" name="_login" class="btn btn-primary">
+                로그인
+                </button>
+                {% endif %}
+            </form>
     </nav>
 
 {% block header %}

@@ -1,0 +1,32 @@
+<div class = "raw">
+    <div class = "col-12" >
+      <div class = "col-12 text-center">
+        <h1>로그인</h1>
+        <br><br>
+</div>
+
+<form method = "POST">
+  {% csrf_token %}
+
+  <div class="form-group">
+    <label for="userID">ID</label>
+    <input type="text"
+    class="form-control"
+    name = "userID"
+    id="userID"
+    placeholder="ID를 입력하세요">
+  </div>
+
+  <div class="form-group">
+    <label for="userPW">PW</label>
+    <input type="password"
+    name = "userPW"
+    class="form-control"
+    id="userPW"
+    placeholder="비밀번호를 입력하세요">
+  </div>
+
+  <span style="color:red;"><strong>{{ error }}</strong> </span>
+  <button type="submit" value="Login" name="_login" class="btn btn-primary">로그인</button>
+  <button type="submit" value="Register" name="_register" class="btn btn-primary">회원가입</button>
+</form>
