@@ -29,6 +29,7 @@ class PhotoGallery{
 
   eventHandle(){
     document.addEventListener('DOMContentLoaded',()=>{
+      console.log("ffff");
       this.getImg(1);
     });
     this.searchForm.addEventListener('submit', (e)=>{
