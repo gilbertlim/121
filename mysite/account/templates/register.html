@@ -27,7 +27,7 @@
 </nav>
 
 <div>
-    <form method="POST" class="login_form">
+    <form method="POST" class="register_form">
         <h2>회원가입</h2>
         {% csrf_token %}
         <div class="form_id">
@@ -46,21 +46,21 @@
         </div>
         <div class="form_re_pw">
             <input type= "password"
-                   class="form-control"
+                   class="re_pw form-control"
                    id="re_password"
                    placeholder="PW 확인"
                    name = "re_password">
         </div>
         <div class="form_phone">
             <input type= "text"
-                   class="form-control"
+                   class="phone form-control"
                    id="userPhone"
                    placeholder="사용자 Phone"
                    name = "userPhone">
         </div>
         <div class="form_mail">
             <input type= "text"
-                   class="form-control"
+                   class="mail form-control"
                    id="userMail"
                    placeholder="사용자 Mail"
                    name = "userMail">

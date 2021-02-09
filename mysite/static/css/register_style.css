@@ -126,7 +126,7 @@ img{
 .register_form{
     position:absolute;
     width:400px;
-    height:500px;
+    height:510px;
     padding: 40px 20px;
     background-color:#FFFFFF;
     text-align:center;
@@ -137,7 +137,7 @@ img{
 }
 .register_form h2{
     text-align: center;
-    margin-top: 90px;
+    margin-top: 10px;
     margin-bottom: 30px;
 }
 .form_id{
